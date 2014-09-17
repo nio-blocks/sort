@@ -3,9 +3,11 @@ from nio.util.support.block_test_case import NIOBlockTestCase
 from nio.common.signal.base import Signal
 from nio.modules.threading import Event
 
+
 class SortTest(Sort):
 
     def __init__(self, event):
+        super().__init__()
         self._event = event
         self._sigs = None
 
@@ -15,6 +17,7 @@ class SortTest(Sort):
 
     def notify_signals(self, signals):
         self._sigs = signals
+
 
 class TestSortBlock(NIOBlockTestCase):
     def setUp(self):
