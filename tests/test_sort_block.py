@@ -1,7 +1,7 @@
+from threading import Event
+from nio.testing.block_test_case import NIOBlockTestCase
+from nio.signal.base import Signal
 from ..sort_block import Sort
-from nio.util.support.block_test_case import NIOBlockTestCase
-from nio.common.signal.base import Signal
-from nio.modules.threading import Event
 
 
 class SortTest(Sort):
@@ -20,6 +20,7 @@ class SortTest(Sort):
 
 
 class TestSortBlock(NIOBlockTestCase):
+
     def setUp(self):
         super().setUp()
         self.signals = [
@@ -73,5 +74,3 @@ class TestSortBlock(NIOBlockTestCase):
         e.wait(1)
         blk.stop()
         self.assertEqual([s.val for s in blk._sigs], [3, 1, 2])
-
-
