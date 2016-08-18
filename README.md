@@ -2,9 +2,9 @@
 A block for sorting a list of incoming signals.
 
 ## Properties
-* **Sort Key**: specifies the value by which signals should be sorted by
-* **Reverse**: boolean value on whether to reverse the specified sort order
-* **Limit**: limit on the number of notified signals
+* **sort_key**: specifies the value by which signals should be sorted by
+* **reverse**: boolean value on whether to reverse the specified sort order
+* **limit**: limit on the number of notified signals
 
 ## Dependencies
 None
