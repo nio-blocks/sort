@@ -1,24 +1,31 @@
-# Sort
+Sort
+=============
 A block for sorting a list of incoming signals.
 
-## Properties
+Properties
+-------------
 * **sort_key**: specifies the value by which signals should be sorted by
 * **reverse**: boolean value on whether to reverse the specified sort order
 * **limit**: limit on the number of notified signals
 
-## Dependencies
+Dependencies
+-------------
 None
 
-## Commands
+Commands
+-------------
 None
 
-## Input
+Input
+-------------
 Any list of signals.
 
-## Output
+Output
+-------------
 Sorted list of signals.
 
-#### Input Signal
+Example 1 - Input Signal
+-------------
 ```
 [
   { 'val': 3 },
@@ -27,12 +34,14 @@ Sorted list of signals.
 ]
 ```
 
-#### Block Config
+Example 1 - Block Config
+-------------
 ```
 'sort_by': '{{ $val }}'
 ```
 
-#### Output Signal
+Example 1 - Output Signal
+-------------
 ```
 [
   { 'val': 1 },
@@ -41,9 +50,8 @@ Sorted list of signals.
 ]
 ```
 
-## More Examples
-
-#### Input Signal
+Example 2 - Input Signal
+-------------
 ```
 [
   { 'val': 3 },
@@ -52,14 +60,16 @@ Sorted list of signals.
 ]
 ```
 
-#### Block Config
+Example 2 - Block Config
+-------------
 ```
 'sort_by': '{{ $val }}',
            'limit': 2
 ```
             
             
-#### Output Signal
+Example 2 - Output Signal
+-------------
 ```
 [
   { 'val': 1 },
