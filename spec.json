@@ -1,33 +1,10 @@
 {
-    "nio/Sort": {
-        "Output": {
-            "Description": "Sorted list of signals."
-        },
-        "Category": "SignalInspection",
-        "Description": "A block for sorting a list of incoming signals.",
-        "Miscellaneous": {
-            "Example 2 - Block Config": "```\n'sort_by': '{{ $val }}',\n'limit': 2\n```",
-            "Example 2 - Input Signal": "```\n[\n{ 'val': 3 },\n{ 'val': 1 },\n{ 'val': 2 }\n]\n```",
-            "Example 2 - Output Signal": "```\n[\n{ 'val': 1 },\n{ 'val': 2 }\n]\n```",
-            "Example 1 - Output Signal": "```\n[\n{ 'val': 1 },\n{ 'val': 2 },\n{ 'val': 3 }\n]\n```",
-            "Example 1 - Block Config": "```\n'sort_by': '{{ $val }}'\n```",
-            "Example 1 - Input Signal": "```\n[\n{ 'val': 3 },\n{ 'val': 1 },\n{ 'val': 2 }\n]\n```"
-        },
-        "Commands": {},
-        "Input": {
-            "Description": "Any list of signals."
-        },
-        "Properties": {
-            "* reverse": {
-                "description": "boolean value on whether to reverse the specified sort order"
-            },
-            "* limit": {
-                "description": "limit on the number of notified signals"
-            },
-            "* sort_key": {
-                "description": "specifies the value by which signals should be sorted by"
-            }
-        },
-        "Version": "1.0.0"
-    }
+  "nio/Sort": {
+    "version": "0.0.1",
+    "description": "",
+    "inputs": {},
+    "outputs": {},
+    "properties": {},
+    "commands": {}
+  }
 }

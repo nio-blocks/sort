@@ -1,7 +1,7 @@
 {
   "nio/Sort": {
-    "Reference": "github.com/nio-blocks/sort.git@v1.0.0",
-    "Version": "1.0.0",
-    "Language": "Python"
+    "language": "Python",
+    "version": "0.0.1",
+    "reference": "github.com/nio-blocks/sort.git@v0.0.1"
   }
 }
