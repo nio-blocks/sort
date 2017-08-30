@@ -1,7 +1,7 @@
 {
   "nio/Sort": {
     "language": "Python",
-    "version": "0.0.1",
-    "url": "git://github.com/nio-blocks/sort.git"
+    "url": "git://github.com/nio-blocks/sort.git",
+    "version": "0.1.0"
   }
 }

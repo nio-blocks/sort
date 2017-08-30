@@ -1,9 +1,7 @@
 from nio.block.base import Block
-from nio.util.discovery import discoverable
 from nio.properties import Property, VersionProperty, IntProperty, BoolProperty
 
 
-@discoverable
 class Sort(Block):
 
     sort_by = Property(title="Sort Key", default="")
@@ -22,4 +20,3 @@ class Sort(Block):
                 "{} to {}".format(size, new_size)
             )
         self.notify_signals(sigs)
-

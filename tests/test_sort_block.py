@@ -1,9 +1,12 @@
 from threading import Event
+
 from nio.testing.block_test_case import NIOBlockTestCase
 from nio.signal.base import Signal
+from nio.util.discovery import not_discoverable
 from ..sort_block import Sort
 
 
+@not_discoverable
 class SortTest(Sort):
 
     def __init__(self, event):

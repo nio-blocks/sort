@@ -1,10 +1,37 @@
 {
   "nio/Sort": {
-    "version": "0.0.1",
-    "description": "",
-    "inputs": {},
-    "outputs": {},
-    "properties": {},
+    "version": "0.1.0",
+    "description": "Sort a list of incoming signals.",
+    "properties": {
+      "limit": {
+        "title": "Limit",
+        "type": "IntType",
+        "description": "Limit the number of included ouput signals for each list of input signals.",
+        "default": 0
+      },
+      "reverse": {
+        "title": "Reverse",
+        "type": "BoolType",
+        "description": "Sort in reverse order.",
+        "default": false
+      },
+      "sort_by": {
+        "title": "Sort Key",
+        "type": "Type",
+        "description": "The value used for sorting on each signal.",
+        "default": ""
+      }
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {
+      "default": {
+        "description": "Sorted list of signals."
+      }
+    },
     "commands": {}
   }
 }
