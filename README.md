@@ -1,31 +1,36 @@
 Sort
-=============
-A block for sorting a list of incoming signals.
+====
+Sort a list of incoming signals.
 
 Properties
--------------
-* **sort_key**: specifies the value by which signals should be sorted by
-* **reverse**: boolean value on whether to reverse the specified sort order
-* **limit**: limit on the number of notified signals
+----------
+- **limit**: Limit the number of included ouput signals for each list of input signals.
+- **reverse**: Sort in revers order.
+- **sort_by**: The value used for sorting on each signal.
 
-Dependencies
--------------
-None
+Inputs
+------
+- **default**: Any list of signals.
+
+Outputs
+-------
+- **default**: Sorted list of signals.
 
 Commands
--------------
+--------
 None
 
-Input
--------------
-Any list of signals.
+Dependencies
+------------
+None
 
-Output
--------------
-Sorted list of signals.
-
-Example 1 - Input Signal
--------------
+Example 1
+---------
+Block Config
+```
+'sort_by': '{{ $val }}'
+```
+Input Signal
 ```
 [
   { 'val': 3 },
@@ -33,15 +38,7 @@ Example 1 - Input Signal
   { 'val': 2 }
 ]
 ```
-
-Example 1 - Block Config
--------------
-```
-'sort_by': '{{ $val }}'
-```
-
-Example 1 - Output Signal
--------------
+Output Signal
 ```
 [
   { 'val': 1 },
@@ -50,8 +47,14 @@ Example 1 - Output Signal
 ]
 ```
 
-Example 2 - Input Signal
--------------
+Example 2
+---------
+Block Config
+```
+'sort_by': '{{ $val }}',
+           'limit': 2
+```
+Input Signal
 ```
 [
   { 'val': 3 },
@@ -59,20 +62,11 @@ Example 2 - Input Signal
   { 'val': 2 }
 ]
 ```
-
-Example 2 - Block Config
--------------
-```
-'sort_by': '{{ $val }}',
-           'limit': 2
-```
-            
-            
-Example 2 - Output Signal
--------------
+Output Signal
 ```
 [
   { 'val': 1 },
   { 'val': 2 }
 ]
 ```
+
