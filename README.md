@@ -5,7 +5,7 @@ Sort a list of incoming signals.
 Properties
 ----------
 - **limit**: Limit the number of included ouput signals for each list of input signals.
-- **reverse**: Sort in revers order.
+- **reverse**: Sort in reverse order.
 - **sort_by**: The value used for sorting on each signal.
 
 Inputs

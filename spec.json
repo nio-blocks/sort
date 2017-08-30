@@ -12,7 +12,7 @@
       "reverse": {
         "title": "Reverse",
         "type": "BoolType",
-        "description": "Sort in revers order.",
+        "description": "Sort in reverse order.",
         "default": false
       },
       "sort_by": {
