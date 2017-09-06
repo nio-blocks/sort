@@ -2,6 +2,9 @@
   "nio/Sort": {
     "version": "0.1.0",
     "description": "Sort a list of incoming signals.",
+    "categories": [
+      "Signal Modifier"
+    ],
     "properties": {
       "limit": {
         "title": "Limit",
