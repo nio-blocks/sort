@@ -1,7 +1,7 @@
 {
   "nio/Sort": {
     "version": "0.1.0",
-    "description": "Sort a list of incoming signals.",
+    "description": "The Sort block orders a list of incoming signals based on the attribute configured in the **sort key** property.",
     "categories": [
       "Signal Modifier"
     ],
@@ -9,13 +9,13 @@
       "limit": {
         "title": "Limit",
         "type": "IntType",
-        "description": "Limit the number of included ouput signals for each list of input signals.",
+        "description": "Limit the length of the the emitted signal list after sorting. If the incoming list is longer than the limit, all items after the limit length will be discarded.",
         "default": 0
       },
       "reverse": {
         "title": "Reverse",
         "type": "BoolType",
-        "description": "Sort in reverse order.",
+        "description": "If true (checked) the list will be sorted in reverse order.",
         "default": false
       },
       "sort_by": {
