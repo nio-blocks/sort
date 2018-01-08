@@ -1,6 +1,6 @@
 {
   "nio/Sort": {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Sort a list of incoming signals.",
     "categories": [
       "Signal Modifier"
