@@ -1,11 +1,11 @@
 Sort
 ====
-Sort a list of incoming signals.
+The Sort block orders a list of incoming signals based on the attribute configured in the **sort key** property.
 
 Properties
 ----------
-- **limit**: Limit the number of included ouput signals for each list of input signals.
-- **reverse**: Sort in reverse order.
+- **limit**: Limit the length of the the emitted signal list after sorting. If the incoming list is longer than the limit, all items after the limit length will be discarded.
+- **reverse**: If true (checked) the list will be sorted in reverse order.
 - **sort_by**: The value used for sorting on each signal.
 
 Inputs
