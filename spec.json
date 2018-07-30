@@ -1,6 +1,6 @@
 {
   "nio/Sort": {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "The Sort block orders a list of incoming signals based on the attribute configured in the **sort key** property.",
     "categories": [
       "Signal Modifier"

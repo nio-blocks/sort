@@ -7,7 +7,7 @@ class Sort(Block):
     sort_by = Property(title="Sort Key", default="")
     reverse = BoolProperty(title="Reverse", default=False)
     limit = IntProperty(title="Limit", default=0)
-    version = VersionProperty("0.1.0")
+    version = VersionProperty("0.1.1")
 
     def process_signals(self, signals):
         sigs = sorted(signals, key=self.sort_by, reverse=self.reverse())
